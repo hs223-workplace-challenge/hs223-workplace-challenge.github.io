@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculation Service!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+  <style>
+    body {
+      background-color: #e80309;
+    }
+  </style>
+  
+<body>
+
+  <div class="toolbar">
+    <ul>
+      <li><a href="index.html"><button class="toolbar-button">Home</button></a></li>
+      <li><a href=products.html><button class="toolbar-button">Products</button></a></li>
+      <li><a href=services.html><button class="toolbar-button">services</button></a></li>
+      <li><a href="contact.html"><button class="toolbar-button">Contact</button></a></li>
+    </ul>
+  </div>
+      
+  <h1>Nuka-Calc!!! </h1>
+  <p>Here at Nuka Cola, we value everyone! thats why we've released a new feature to see how much YOU are worth! plug in the numbers of your current job (or your new job with us😉) and watch the magic unfold! compare us with our competitors just to see how much better we are! Have fun and remember, ZAP THAT THIRST!!</p>
+
+  <form id="calculator">
+    <label for="salary">Base Salary ($)*</label>
+    <input type="number" id="salary" name="salary" min="1" required value="20" />
+
+    <!-- <label for="quantity">Quantity (0–200)*</label>
+    <p>Save 5% when you order 100 or more hats.</p>
+    <input type="range" id="quantity" name="quantity" min="0" max="200" step="25" value="50" list="markers" required />
+    <datalist id="markers">
+      <option value="0" label="000"></option>
+      <option value="50" label="050"></option>
+      <option value="100" label="100"></option>
+      <option value="150" label="150"></option>
+      <option value="200" label="200"></option>
+    </datalist> -->
+
+    <label for="shares">Shares</label>
+    <input type="number" id="shares" name="shares" min="0" value="1" />
+
+    <label for="strikePrice">Strike Price ($)</label>
+    <input type="number" id="strikePrice" name="strikePrice" value="10" />
+
+    <label for="preferredPrice">Preferred Price ($)</label>
+    <input type="number" id="preferredPrice" name="preferredPrice" value="10" />
+
+    <input type="submit" value="Calculate" />
+
+    <label for="total">Total ($)</label>
+    <p>(Salary + ((preferred price - strike price) * number of shares)</p>
+    <input type="number" id="total" name="total" min="0.01" step="0.01" readonly />
+  </form>
+
+  <p> tip: if you're total is above 10% of your base salary, its a good offer!!</p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      background-color: #e80309;
+    }
+  </style>
+  <style>
+    h2 {
+      color: white;
+      font-family: Gothic 821 Condensed, sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <ul>
+      <li><a href="index.html"><button class="toolbar-button">Home</button></a></li>
+      <li><a href=products.html><button class="toolbar-button">Products</button></a></li>
+      <li><a href=services.html><button class="toolbar-button">services</button></a></li>
+      <li><a href="contact.html"><button class="toolbar-button">Contact</button></a></li>
+    </ul>
+  </div>
+
+  <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+      <label class="required" for="name">Your name:</label><br />
+      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+      <span id="name_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br />
+      <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+      <span id="email_validation" class="error_message"></span>
+    </div>
+    <div class="row">
+      <label class="required" for="message">Your message:</label><br />
+      <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+      <span id="message_validation" class="error_message"></span>
+    </div>
+
+      <input id="submit_button" type="submit" value="Send email" />
+  </form>
